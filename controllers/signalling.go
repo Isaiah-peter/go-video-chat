@@ -1,20 +1,25 @@
-package server
+package controllers
 
 import (
+	"encoding/json"
+	"fmt"
 	"net/http"
-	"video-chat-app/server"
+	"video-chat-app/models"
 )
 
-var (
-	AllRooms server.RoomMap
-)
+var AllRooms models.RoomMap
 
-// create a room and return a roomID
+type resp struct {
+	RoomId string `json:"room_id"`
+}
+
+// create a room and return a
 func CreateRoomRequestHandler(w http.ResponseWriter, r *http.Request) {
-
+	roomId := AllRooms.CreateRoom()
+	json.NewEncoder(w).Encode(resp{RoomId: roomId})
 }
 
 //join room
 func JoinRoomRequestHandler(w http.ResponseWriter, r *http.Request) {
-
+	fmt.Fprint(w, "hello word")
 }
