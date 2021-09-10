@@ -2,9 +2,9 @@ package server
 
 import (
 	"encoding/json"
+	"github.com/gorilla/websocket"
 	"log"
 	"net/http"
-	"github.com/gorilla/websocket"
 )
 
 var AllRooms RoomMap
@@ -73,12 +73,14 @@ func JoinRoomRequestHandler(w http.ResponseWriter, r *http.Request) {
 	for {
 		var msg broadcastMsg
 
-		err := ws.ReadJSON(msg.Message)
+		err := ws.ReadJSON(&msg.Message)
 		if err != nil {
 			log.Fatal("Read err: ", err)
 		}
 		msg.Client = ws
 		msg.RoomID = roomId[0]
+
+		log.Println(msg.Message)
 
 		broadcast <- msg
 	}

@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd21d09c-dccd-4d87-a3a9-733be3fbd4ea" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/signalling.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/signalling.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/room.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/room.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/signalling.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/signalling.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/video-chat-app.exe" beforeDir="false" afterPath="$PROJECT_DIR$/video-chat-app.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +87,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
